@@ -9,11 +9,4 @@
 | Low Latecency | Yes | Yes | Yes |
 | Publish Webhook | Yes | Unknow | Unknow |
 | Dashboard | Cloud | Self Management | Self Management |
-| DRM | Google Widevine<br>
-Microsoft Playready<br>
-Apple FairPlay<br>
-Widevine Cloud Service<br>
-BuyDRM KeyOS<br>
-EZDRM<br>
-PallyCon<br>
-Verimatrix VCAS CPIX<br>
+| DRM | Google Widevine<br>Microsoft Playready<br>Apple FairPlay<br>Widevine Cloud Service<br>BuyDRM KeyOS<br>EZDRM<br>PallyCon<br>Verimatrix VCAS CPIX<br> | BuyDRM<br>DRMtoday<br>EzDRM<br>Verimatrix VCAS DRM  | EZDRM<br> DRM Conax<br> DRM Conax for Nagra<br> BuyDRM (KeyOS)<br> Widevine<br> PallyCon<br> Irdeto<br> PlayReady<br> GS DRM<br>
