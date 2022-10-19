@@ -1,0 +1,9 @@
+Samsung SM883 Raid1 480G
+
+READ: bw=270MiB/s (283MB/s), 270MiB/s-270MiB/s (283MB/s-283MB/s), io=3070MiB (3219MB), run=11360-11360msec
+WRITE: bw=90.3MiB/s (94.7MB/s), 90.3MiB/s-90.3MiB/s (94.7MB/s-94.7MB/s), io=1026MiB (1076MB), run=11360-11360msec
+
+Samsung SSD 870 EVO Raid1 480G
+
+READ: bw=161MiB/s (169MB/s), 161MiB/s-161MiB/s (169MB/s-169MB/s), io=3070MiB (3219MB), run=19048-19048msec
+WRITE: bw=53.9MiB/s (56.5MB/s), 53.9MiB/s-53.9MiB/s (56.5MB/s-56.5MB/s), io=1026MiB (1076MB), run=19048-19048msec
