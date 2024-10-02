@@ -1,0 +1,68 @@
+clusters:
+  - name: example-cluster2
+    short_description: "Example Cluster2"
+    description: "Example Cluster Long Description..."
+    redirect_uri: https://dex-auth.example.com/callback/example-cluster2
+    client_secret: ZXhhbXBsZS1hcHAtc2VjcmV0
+    client_id: kubernetes2
+    issuer:  https://example.com
+    k8s_master_uri: https://your-k8s-master.cluster
+    static_context_name: false
+  - name: example-cluster
+    short_description: "Example Cluster"
+    description: "Example Cluster Long Description..."
+    redirect_uri: https://dex-auth.example.com/callback/example-cluster
+    client_secret: ZXhhbXBsZS1hcHAtc2VjcmV0
+    client_id: kubernetes
+    issuer:  https://example.com
+    k8s_master_uri: https://192.168.1.12:6443
+    static_context_name: false
+    # kubeconfig
+    # Both k8s_ca_uri and k8s_ca_pem are optional - you typically specifiy
+    # one or the other if required
+    #
+    # Provides a link to the CA from a hosted site
+    # k8s_ca_uri: http://url-to-your-ca.crt
+    #
+    # Provides abililty to specify CA inline
+
+# Specify multiple extra root CA files to be loaded
+# trusted_root_ca:
+#   -|
+#     -----BEGIN CERTIFICATE-----
+#     ...
+#     -----END CERTIFICATE-----
+
+# Specify path to tls_cert and tls_key - if enabled, set liten to use https
+# tls_cert: /path/to/dex-client.crt
+# tls_key: /path/to/dex-client.key
+
+# CA for your IDP - used in WebUI instructions for generating
+# kubeconfig
+# Both idp_ca_uri and idp_ca_pem are optional - you typically specifiy
+# one or the other if required
+#
+# Provides a link to the CA from a hosted site
+# idp_ca_uri: http://url-to-your-ca.crt
+#
+# Provides abililty to specify CA inline
+# idp_ca_pem: |
+#   -----BEGIN CERTIFICATE-----
+#   ...
+#   -----END CERTIFICATE-----
+
+
+# Which address to listen on (set to https if tls configured)
+listen: http://0.0.0.0:5555
+
+# A path-prefix from which to serve requests and assets
+web_path_prefix: /
+
+# Optional kubectl version which provides a download link to the the binary
+kubectl_version: v1.30.4
+
+# Optional Url to display a logo image
+# logo_uri: http://<path-to-your-logo.png>
+
+# Enable more debug
+debug: false

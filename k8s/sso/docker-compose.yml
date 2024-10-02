@@ -1,0 +1,19 @@
+version: '3'
+services:
+  dex:
+    image: dexidp/dex:v2.41.1-alpine
+    container_name: dex
+    restart: unless-stopped
+    network_mode: host
+    command: ["dex","serve","/dex.yaml"]
+    volumes:
+    - "./dex.yaml:/dex.yaml"
+
+  dex-auth:
+    image: mintel/dex-k8s-authenticator
+    container_name: dex-auth
+    restart: unless-stopped
+    network_mode: host
+    command: ["--config","/config.yaml"]
+    volumes:
+    - "./config.yaml:/config.yaml"
